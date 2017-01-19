@@ -13,10 +13,6 @@ body{
         width: 100%;
     }
 
-    .nav_content:active{
-    background-color: dimgrey;
-}
-
     main{
     display: flex;
     flex-direction: column;
@@ -38,11 +34,73 @@ body{
     width: 555px;
     height: 370px;
     }
+
+    article {
+    padding: 10px;
+    font-size: 1em;
 }
+
+    aside{
+        display: none;
+    }
+}
+
+@media screen and (min-device-width: 1200px) { 
+
+    .site {
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        height: 800px;
+        margin: 10px;
+    }
+
+    main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: navajowhite;
+    border: solid 2px grey;
+    padding: 10px;
+    }
+
+    article {
+    padding: 10px;
+}
+
+    .hidden_picture {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 555px;
+        height: 370px;
+        background: url("../img/banana_pie1.jpg");
+        }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("../img/Banana.png");
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 260px;
+        border: solid 2px grey;
+
+    }
+}
+
+
+
+
+
 
 header {
     display: flex;
-    flex-grow: 6;
     background-color: black;
     color: white;
     flex-direction: row;
@@ -50,17 +108,16 @@ header {
     align-items: center;
     font-size: 2em;
     margin: 0;
+    size: 100%;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    flex-grow: 2;
     background-color: grey;
+    height: 55px;
     margin: 0;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0;
 }
 
 .nav_content{
@@ -69,17 +126,28 @@ nav{
     justify-content: center;
     align-items: center;
     flex-grow: 2;
-    font-size: 2em;
-    color: white;
+    height: 55px;
     text-decoration: none;
 }
 
+.nav_text{
+    font-size: 2em;
+    color: white;
+}
 
+.nav_content:active{
+    background-color: #261E1E;
+}
 
-article {
-    background-color: navajowhite;
-    padding: 10px;
-    font-size: 1em;
+.hide{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    width: 555px;
+    background-color: black;
+    color: white;
 }
 
 footer{
@@ -87,10 +155,9 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 5;
     background-color: grey;
     color: white;
-    padding: 40px;
+    padding: 0px;
     margin-bottom: 20px;
     font-size: 1.5em;
 }
