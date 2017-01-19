@@ -33,6 +33,7 @@ body{
     background-color: blue;
     width: 555px;
     height: 370px;
+    background: url("../img/banana_pie1.jpg");
     }
 
     article {
@@ -94,11 +95,6 @@ body{
     }
 }
 
-
-
-
-
-
 header {
     display: flex;
     background-color: black;
@@ -144,9 +140,6 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 370px;
-    width: 555px;
-    background-color: black;
     color: white;
 }
 

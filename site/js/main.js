@@ -1,4 +1,5 @@
 function togglePicture() {
     var element = document.querySelector(".hide");
-    element.classlist.toggle("hidden_picture");
+    element.classList.toggle("hidden_picture");
+    console.log("grillkorv");
 }
